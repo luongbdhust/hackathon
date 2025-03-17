@@ -1,0 +1,15 @@
+pdf2image
+pillow
+pymongo
+python-dotenv
+google-genai
+openai
+streamlit
+tenacity
+langchain
+langchain_community
+langchain_openai
+langchain_pinecone
+pinecone
+pypdf
+langchain_text_splitters
