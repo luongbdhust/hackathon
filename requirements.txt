@@ -13,3 +13,5 @@ langchain_pinecone
 pinecone
 pypdf
 langchain_text_splitters
+openai-agents
+nest-asyncio

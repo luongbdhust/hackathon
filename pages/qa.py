@@ -7,7 +7,6 @@ from langchain import hub
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain.chains import create_retrieval_chain
 from langchain_openai import ChatOpenAI
-import streamlit.components.v1 as components
 
 mongoClient = MongoClient(st.secrets["MONGO_URI"])
 db = mongoClient["rikkei"]
