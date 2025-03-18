@@ -122,11 +122,7 @@ else:
 with st.expander("Company portfolio", expanded=True):
     st.write(st.session_state.company_str)
 
-if 'button_clicked' not in st.session_state:
-    st.session_state.button_clicked = False
-
-if st.button("🎯 Matching with rikkei skill, casestudy", type="primary", disabled=st.session_state.button_clicked):
-    st.session_state.button_clicked = True
+if st.button("🎯 Matching with rikkei skill, casestudy", type="primary"):
 
     promtSearch = f"""
         これはある会社の情報です： \n
@@ -170,5 +166,3 @@ if st.button("🎯 Matching with rikkei skill, casestudy", type="primary", disab
                 placeholder.write(llm_response)
 
         break
-
-    st.session_state.button_clicked = False
